@@ -10,6 +10,7 @@ const config = {
 		alias: {
 			$i18n: 'src/i18n',
 			$routes: 'src/routes',
+			$params: 'src/params',
 			$utils: 'src/utils'
 		}
 	}
