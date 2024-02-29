@@ -6,7 +6,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			$i18n: 'src/i18n',
+			$routes: 'src/routes',
+			$params: 'src/params',
+			$utils: 'src/utils'
+		}
 	}
 };
 
