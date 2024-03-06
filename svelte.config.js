@@ -4,13 +4,14 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),
-
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$assets: 'src/assets',
 			$i18n: 'src/i18n',
-			$routes: 'src/routes',
 			$params: 'src/params',
+			$routes: 'src/routes',
+			$stores: 'src/stores',
 			$utils: 'src/utils'
 		}
 	}
