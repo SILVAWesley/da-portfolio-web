@@ -1,2 +1,11 @@
+export { clickOutside } from './click-outside';
 export { CookiesStorage } from './cookies-storage';
+export { focusTrap } from './focus-trap';
+export { focusableElements } from './focusable-elements';
+export { getPreferredTheme } from './get-preferred-theme';
+export { getReadable, getSingletonContext, getWritable } from './get-singleton-context';
+export { getSystemTheme } from './get-system-theme';
+export { isVisible } from './is-visible';
 export { getPreferredLocale } from './preferred-locale';
+export { replaceLocaleInUrl } from './replace-locale-in-url';
+export { siteLocales } from './site-locales';

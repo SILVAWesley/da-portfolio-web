@@ -1,20 +1,28 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
-	import { setLocale, type Locales } from '$i18n';
+	import { Header, LangMeta } from '$lib';
+	import { getThemeStore } from '$stores';
 	import { inject } from '@vercel/analytics';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import '../app.css';
 	import type { LayoutData } from './$types';
-	import { loadLocale } from '$i18n';
-	import { onMount } from 'svelte';
-	import { loadLocaleAsync } from '$i18n/i18n-util.async';
 
 	injectSpeedInsights();
 	inject({ mode: dev ? 'development' : 'production' });
 
 	export let data: LayoutData;
-	loadLocale(data.locale);
-	setLocale(data.locale);
+
+	getThemeStore().setTheme(data.theme);
 </script>
 
-<slot />
+<svelte:head>
+	<LangMeta />
+</svelte:head>
+
+<Header />
+
+<main class="flex flex-col items-center px-6 py-8">
+	<div class="max-w-screen-2xl">
+		<slot />
+	</div>
+</main>

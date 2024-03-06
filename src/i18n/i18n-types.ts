@@ -18,6 +18,104 @@ type RootTranslation = {
 	 * O​i​,​ ​M​U​I​T​O​ ​B​O​M
 	 */
 	HI: string
+	seo: {
+		/**
+		 * p​t​-​b​r
+		 */
+		language: string
+	}
+	sitemap: {
+		arts: {
+			/**
+			 * A​r​t​e​s
+			 */
+			name: string
+			/**
+			 * A​r​t​e​s
+			 */
+			title: string
+			seo: {
+				/**
+				 * L​i​l​i​a​ ​G​r​a​z​i​e​l​y​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​a​ ​p​o​r​t​f​o​l​i​o​:​ ​a​r​t​e​s​,​ ​i​l​u​s​t​r​a​ç​õ​e​s​,​ ​d​e​s​e​n​h​o​s​ ​e​ ​t​a​t​u​a​g​e​n​s
+				 */
+				title: string
+				/**
+				 * A​r​t​e​s​ ​d​e​ ​L​i​l​i​a​ ​G​r​a​z​i​e​l​y​,​ ​u​m​a​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​a​ ​e​s​p​e​c​i​a​l​i​z​a​d​a​ ​e​m​ ​a​r​t​e​ ​d​i​g​i​t​a​l​,​ ​p​i​n​t​u​r​a​s​,​ ​d​e​s​e​n​h​o​s​,​ ​i​l​u​s​t​r​a​ç​õ​e​s​ ​e​ ​t​a​t​u​a​g​e​n​s​.​ ​C​o​n​t​a​t​o​ ​p​o​r​ ​l​i​n​k​e​d​i​n​,​ ​i​n​s​t​a​g​r​a​m​ ​e​ ​e​m​a​i​l
+				 */
+				description: string
+				/**
+				 * d​e​s​i​g​n​ ​g​r​á​f​i​c​o​,​ ​l​i​l​i​a​ ​g​r​a​z​i​e​l​y​,​ ​p​o​r​t​f​ó​l​i​o​,​ ​c​o​n​t​r​a​t​a​r​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​o​,​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​o​ ​t​r​a​b​a​l​h​o​,​ ​a​r​t​e​,​ ​g​e​r​a​d​o​r​ ​d​e​ ​a​r​t​e​ ​i​a​,​ ​a​r​t​e​ ​d​i​g​i​t​a​l
+				 */
+				keywords: string
+			}
+		}
+		about: {
+			/**
+			 * S​o​b​r​e
+			 */
+			name: string
+			/**
+			 * S​o​b​r​e
+			 */
+			title: string
+			seo: {
+				/**
+				 * S​o​b​r​e​ ​L​i​l​i​a​ ​G​r​a​z​i​e​l​y​,​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​a​.​ ​E​s​p​e​c​i​a​l​i​z​a​d​a​ ​e​m​ ​a​r​t​e​s​,​ ​i​l​u​s​t​r​a​ç​õ​e​s​,​ ​d​e​s​e​n​h​o​s​ ​e​ ​t​a​t​u​a​g​e​n​s
+				 */
+				title: string
+				/**
+				 * L​i​l​i​a​ ​G​r​a​z​i​e​l​y​ ​é​ ​u​m​a​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​a​ ​e​s​p​e​c​i​a​l​i​z​a​d​a​ ​e​m​ ​a​r​t​e​ ​d​i​g​i​t​a​l​,​ ​p​i​n​t​u​r​a​s​,​ ​d​e​s​e​n​h​o​s​,​ ​i​l​u​s​t​r​a​ç​õ​e​s​ ​e​ ​t​a​t​u​a​g​e​n​s​.​ ​C​o​n​t​a​t​o​ ​p​o​r​ ​l​i​n​k​e​d​i​n​,​ ​i​n​s​t​a​g​r​a​m​ ​e​ ​e​m​a​i​l
+				 */
+				description: string
+				/**
+				 * d​e​s​i​g​n​ ​g​r​á​f​i​c​o​,​ ​l​i​l​i​a​ ​g​r​a​z​i​e​l​y​,​ ​p​o​r​t​f​ó​l​i​o​,​ ​s​o​b​r​e​,​ ​h​i​s​t​ó​r​i​a​ ​d​e​ ​v​i​d​a​,​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​o​ ​t​r​a​b​a​l​h​o​,​ ​c​o​n​t​r​a​t​a​r​ ​a​r​t​i​s​t​a​ ​g​r​á​f​i​c​o
+				 */
+				keywords: string
+			}
+		}
+	}
+	header: {
+		/**
+		 * L​I​L​I​A​ ​G​R​A​Z​I​E​L​Y
+		 */
+		name: string
+		/**
+		 * D​e​s​i​g​n​e​r​ ​G​r​á​f​i​c​a
+		 */
+		profession: string
+		navigation: {
+			/**
+			 * M​e​n​u​ ​P​r​i​n​c​i​p​a​l
+			 */
+			ariaLabel: string
+		}
+		languageMenu: {
+			/**
+			 * M​u​d​a​r​ ​i​d​i​o​m​a
+			 */
+			ariaLabel: string
+		}
+		themeMenu: {
+			/**
+			 * M​u​d​a​r​ ​t​e​m​a
+			 */
+			ariaLabel: string
+			themes: {
+				/**
+				 * S​i​s​t​e​m​a
+				 */
+				system: string
+				/**
+				 * E​s​c​u​r​o
+				 */
+				dark: string
+				/**
+				 * C​l​a​r​o
+				 */
+				light: string
+			}
+		}
+	}
 }
 
 export type TranslationFunctions = {
@@ -25,6 +123,104 @@ export type TranslationFunctions = {
 	 * Oi, MUITO BOM
 	 */
 	HI: () => LocalizedString
+	seo: {
+		/**
+		 * pt-br
+		 */
+		language: () => LocalizedString
+	}
+	sitemap: {
+		arts: {
+			/**
+			 * Artes
+			 */
+			name: () => LocalizedString
+			/**
+			 * Artes
+			 */
+			title: () => LocalizedString
+			seo: {
+				/**
+				 * Lilia Graziely artista gráfica portfolio: artes, ilustrações, desenhos e tatuagens
+				 */
+				title: () => LocalizedString
+				/**
+				 * Artes de Lilia Graziely, uma artista gráfica especializada em arte digital, pinturas, desenhos, ilustrações e tatuagens. Contato por linkedin, instagram e email
+				 */
+				description: () => LocalizedString
+				/**
+				 * design gráfico, lilia graziely, portfólio, contratar artista gráfico, artista gráfico trabalho, arte, gerador de arte ia, arte digital
+				 */
+				keywords: () => LocalizedString
+			}
+		}
+		about: {
+			/**
+			 * Sobre
+			 */
+			name: () => LocalizedString
+			/**
+			 * Sobre
+			 */
+			title: () => LocalizedString
+			seo: {
+				/**
+				 * Sobre Lilia Graziely, artista gráfica. Especializada em artes, ilustrações, desenhos e tatuagens
+				 */
+				title: () => LocalizedString
+				/**
+				 * Lilia Graziely é uma artista gráfica especializada em arte digital, pinturas, desenhos, ilustrações e tatuagens. Contato por linkedin, instagram e email
+				 */
+				description: () => LocalizedString
+				/**
+				 * design gráfico, lilia graziely, portfólio, sobre, história de vida, artista gráfico trabalho, contratar artista gráfico
+				 */
+				keywords: () => LocalizedString
+			}
+		}
+	}
+	header: {
+		/**
+		 * LILIA GRAZIELY
+		 */
+		name: () => LocalizedString
+		/**
+		 * Designer Gráfica
+		 */
+		profession: () => LocalizedString
+		navigation: {
+			/**
+			 * Menu Principal
+			 */
+			ariaLabel: () => LocalizedString
+		}
+		languageMenu: {
+			/**
+			 * Mudar idioma
+			 */
+			ariaLabel: () => LocalizedString
+		}
+		themeMenu: {
+			/**
+			 * Mudar tema
+			 */
+			ariaLabel: () => LocalizedString
+			themes: {
+				/**
+				 * Sistema
+				 */
+				system: () => LocalizedString
+				/**
+				 * Escuro
+				 */
+				dark: () => LocalizedString
+				/**
+				 * Claro
+				 */
+				light: () => LocalizedString
+			}
+		}
+	}
 }
 
 export type Formatters = {}

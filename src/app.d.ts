@@ -1,6 +1,8 @@
 // See https://kit.svelte.dev/docs/types#app
 
 import type { Locales } from '$i18n';
+import type { TTheme } from '$stores';
+import '@poppanator/sveltekit-svg/dist/svg';
 
 // for information about these interfaces
 declare global {
@@ -9,6 +11,7 @@ declare global {
 		// interface Locals {}
 		interface Locals {
 			locale: Locales;
+			theme: TTheme;
 		}
 		// interface PageData {}
 		// interface PageState {}
