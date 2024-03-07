@@ -10,6 +10,7 @@ export const focusableElements = [
 	'iframe',
 	'object',
 	'embed',
+	'summary',
 	'[contenteditable]',
 	'[tabindex]:not([tabindex^="-"])'
 ];

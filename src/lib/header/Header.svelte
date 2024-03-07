@@ -11,19 +11,14 @@
 
 	const currentUrl = `/${$page.url.pathname.split('/')[2] ?? ''}`;
 	const navigationStore = getNavigationStore();
-
-	let isDrawerOpen = false;
 </script>
 
 <header
 	class="sticky top-0 flex h-20 w-full justify-center border-b-[1px] border-base-300 bg-base-100 bg-opacity-80 px-6 backdrop-blur-sm"
 >
 	<div class="flex h-full w-full max-w-screen-2xl items-center gap-4 sm:gap-10">
-		<a href="/" class="flex flex-1 flex-row items-center gap-2 sm:flex-none">
-			<Logo
-				aria-label="Hello"
-				class="h-10 w-10 fill-transparent stroke-base-content stroke-[1px]"
-			/>
+		<a href="/" class="flex flex-row items-center gap-2 sm:flex-none">
+			<Logo class="h-10 w-10 fill-transparent stroke-base-content stroke-[1px]" />
 
 			<div class="flex flex-col justify-center">
 				<h1 class="font-sans text-lg font-semibold leading-tight tracking-wider sm:text-xl">
@@ -48,19 +43,10 @@
 			<ThemeMenu />
 		</div>
 
-		<div class="flex justify-end sm:hidden">
-			<button
-				class="btn btn-ghost"
-				on:click={() => {
-					isDrawerOpen = !isDrawerOpen;
-				}}
-			>
-				<MenuAltRightIcon class="h-9 fill-current" />
-			</button>
+		<div class="flex flex-1 justify-end sm:hidden">
+			<div>
+				<Drawer />
+			</div>
 		</div>
-	</div>
-
-	<div class="sm:hidden">
-		<Drawer bind:open={isDrawerOpen} />
 	</div>
 </header>

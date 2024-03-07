@@ -33,14 +33,18 @@ const pt_BR = {
 	header: {
 		name: 'LILIA GRAZIELY',
 		profession: 'Designer Gráfica',
+		drawer: { open: 'Abrir menu' },
 		navigation: {
-			ariaLabel: 'Menu Principal'
+			ariaLabel: 'Menu Principal',
+			name: 'Páginas'
 		},
 		languageMenu: {
-			ariaLabel: 'Mudar idioma'
+			ariaLabel: 'Mudar idioma',
+			name: 'Idioma'
 		},
 		themeMenu: {
 			ariaLabel: 'Mudar tema',
+			name: 'Tema',
 			themes: { system: 'Sistema', dark: 'Escuro', light: 'Claro' }
 		}
 	}
