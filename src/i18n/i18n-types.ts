@@ -83,23 +83,41 @@ type RootTranslation = {
 		 * D​e​s​i​g​n​e​r​ ​G​r​á​f​i​c​a
 		 */
 		profession: string
+		drawer: {
+			/**
+			 * A​b​r​i​r​ ​m​e​n​u
+			 */
+			open: string
+		}
 		navigation: {
 			/**
 			 * M​e​n​u​ ​P​r​i​n​c​i​p​a​l
 			 */
 			ariaLabel: string
+			/**
+			 * P​á​g​i​n​a​s
+			 */
+			name: string
 		}
 		languageMenu: {
 			/**
 			 * M​u​d​a​r​ ​i​d​i​o​m​a
 			 */
 			ariaLabel: string
+			/**
+			 * I​d​i​o​m​a
+			 */
+			name: string
 		}
 		themeMenu: {
 			/**
 			 * M​u​d​a​r​ ​t​e​m​a
 			 */
 			ariaLabel: string
+			/**
+			 * T​e​m​a
+			 */
+			name: string
 			themes: {
 				/**
 				 * S​i​s​t​e​m​a
@@ -188,23 +206,41 @@ export type TranslationFunctions = {
 		 * Designer Gráfica
 		 */
 		profession: () => LocalizedString
+		drawer: {
+			/**
+			 * Abrir menu
+			 */
+			open: () => LocalizedString
+		}
 		navigation: {
 			/**
 			 * Menu Principal
 			 */
 			ariaLabel: () => LocalizedString
+			/**
+			 * Páginas
+			 */
+			name: () => LocalizedString
 		}
 		languageMenu: {
 			/**
 			 * Mudar idioma
 			 */
 			ariaLabel: () => LocalizedString
+			/**
+			 * Idioma
+			 */
+			name: () => LocalizedString
 		}
 		themeMenu: {
 			/**
 			 * Mudar tema
 			 */
 			ariaLabel: () => LocalizedString
+			/**
+			 * Tema
+			 */
+			name: () => LocalizedString
 			themes: {
 				/**
 				 * Sistema

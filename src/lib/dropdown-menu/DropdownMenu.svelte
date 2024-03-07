@@ -1,10 +1,9 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { clickOutside } from '$utils';
 	import { focusTrap } from '$utils/focus-trap';
-	import { onDestroy, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import { twMerge } from 'tailwind-merge';
-	import { browser } from '$app/environment';
-	import { getFocusableElements } from '$utils/focusable-elements';
 
 	let open = false;
 	let className = '';
@@ -31,14 +30,12 @@
 			if (open) {
 				document.body.classList.add('pointer-events-none');
 				document.body.classList.add('overflow-hidden');
+				document.body.addEventListener('keydown', handleKeyDown);
 			} else {
 				document.body.classList.remove('pointer-events-none');
 				document.body.classList.remove('overflow-hidden');
+				document.body.removeEventListener('keydown', handleKeyDown);
 			}
-
-			open
-				? document.body.addEventListener('keydown', handleKeyDown)
-				: document.body.removeEventListener('keydown', handleKeyDown);
 		}
 	}
 </script>
@@ -50,17 +47,12 @@
 		open = false;
 	}}
 >
-	<summary
-		bind:this={summaryNode}
-		class="btn btn-ghost"
-		aria-haspopup="menu"
-		aria-expanded={open}
-		aria-controls="mymenu"><slot name="summary" /></summary
+	<summary bind:this={summaryNode} class="btn btn-ghost" aria-haspopup="menu" aria-expanded={open}
+		><slot name="summary" /></summary
 	>
 
 	{#if open}
 		<ul
-			id="mymenu"
 			role="menu"
 			class={twMerge(
 				'menu dropdown-content pointer-events-auto z-10 mt-1 w-56 gap-1 rounded-box bg-base-200 p-4 shadow',

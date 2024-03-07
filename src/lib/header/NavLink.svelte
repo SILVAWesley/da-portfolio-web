@@ -7,12 +7,12 @@
 
 	export { className as class };
 
-	const linkStyle = active ? 'link-primary font-semibold' : 'link-hover';
+	const linkStyle = active && 'font-semibold underline';
 </script>
 
 <li class={className}>
 	<a
-		class={twMerge(`link`, linkStyle)}
+		class={twMerge(`link-hover underline-offset-4`, linkStyle)}
 		{href}
 		aria-current={active ? 'page' : 'false'}
 		on:click={(e) => {

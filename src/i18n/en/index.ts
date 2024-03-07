@@ -34,15 +34,19 @@ const en = {
 	header: {
 		name: 'LILIA GRAZIELY',
 		profession: 'Graphic Designer',
+		drawer: { open: 'Abrir menu' },
 		navigation: {
-			ariaLabel: 'Main Menu'
+			ariaLabel: 'Main Menu',
+			name: 'Pages'
 		},
 		languageMenu: {
-			ariaLabel: 'Change language'
+			ariaLabel: 'Change language',
+			name: 'Language'
 		},
 		themeMenu: {
 			ariaLabel: 'Change theme',
-			themes: { system: 'System', dark: 'Dark', light: 'Light' }
+			themes: { system: 'System', dark: 'Dark', light: 'Light' },
+			name: 'Theme'
 		}
 	}
 } satisfies Translation;

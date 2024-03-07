@@ -1,22 +1,17 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
 	import { Header, LangMeta } from '$lib';
-	import { getThemeStore } from '$stores';
 	import { inject } from '@vercel/analytics';
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import '../app.css';
-	import type { LayoutData } from './$types';
 
 	injectSpeedInsights();
 	inject({ mode: dev ? 'development' : 'production' });
-
-	export let data: LayoutData;
-
-	getThemeStore().setTheme(data.theme);
 </script>
 
 <svelte:head>
 	<LangMeta />
+	<meta name="theme-color" content="#fff" />
 </svelte:head>
 
 <Header />
