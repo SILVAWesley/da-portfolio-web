@@ -19,7 +19,3 @@
 	<ArtCard images={[{ alt: 'hello', src: '/art1.jpg', id: 0 }]} />
 	<ArtCard images={[{ alt: 'hello', src: '/art1.jpg', id: 0 }]} />
 </div>
-
-{#if $page.url.searchParams.get('id')}
-	<ArtDialog />
-{/if}
