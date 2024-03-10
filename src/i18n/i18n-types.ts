@@ -74,6 +74,12 @@ type RootTranslation = {
 			}
 		}
 	}
+	artCard: {
+		/**
+		 * E​s​c​o​l​h​a​ ​o​ ​s​l​i​d​e​ ​p​a​r​a​ ​e​x​i​b​i​r
+		 */
+		tablistLabel: string
+	}
 	header: {
 		/**
 		 * L​I​L​I​A​ ​G​R​A​Z​I​E​L​Y
@@ -196,6 +202,12 @@ export type TranslationFunctions = {
 				keywords: () => LocalizedString
 			}
 		}
+	}
+	artCard: {
+		/**
+		 * Escolha o slide para exibir
+		 */
+		tablistLabel: () => LocalizedString
 	}
 	header: {
 		/**

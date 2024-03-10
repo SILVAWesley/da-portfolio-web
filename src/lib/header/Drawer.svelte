@@ -75,7 +75,7 @@
 			id: 1,
 			icon: MoonIcon,
 			name: $LL.header.themeMenu.themes.dark(),
-			type: 'dark'
+			type: 'black'
 		},
 		{
 			id: 2,
