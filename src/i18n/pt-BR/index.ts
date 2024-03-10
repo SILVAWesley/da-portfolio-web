@@ -30,6 +30,9 @@ const pt_BR = {
 			}
 		}
 	},
+	artCard: {
+		tablistLabel: 'Escolha o slide para exibir'
+	},
 	header: {
 		name: 'LILIA GRAZIELY',
 		profession: 'Designer Gráfica',

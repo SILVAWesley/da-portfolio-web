@@ -12,7 +12,7 @@ export interface IThemeInfo {
 	icon: ComponentType<SvelteComponent<SVGAttributes<SVGSVGElement>, any, any>>;
 }
 
-export type TTheme = 'system' | 'dark' | 'light';
+export type TTheme = 'system' | 'black' | 'light';
 
 export interface IThemeStore {
 	theme?: TTheme;

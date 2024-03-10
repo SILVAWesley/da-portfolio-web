@@ -14,7 +14,7 @@
 </script>
 
 <header
-	class="sticky top-0 flex h-20 w-full justify-center border-b-[1px] border-base-300 bg-base-100 bg-opacity-80 px-6 backdrop-blur-sm"
+	class="sticky top-0 z-50 flex h-20 w-full justify-center border-b-[1px] border-base-300 bg-base-100 bg-opacity-80 px-6 backdrop-blur-sm"
 >
 	<div class="flex h-full w-full max-w-screen-2xl items-center gap-4 sm:gap-10">
 		<a href="/" class="flex flex-row items-center gap-2 sm:flex-none">

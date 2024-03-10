@@ -5,5 +5,6 @@ import type { LayoutLoad } from './$types';
 export const load: LayoutLoad = async ({ data }) => {
 	await loadLocaleAsync(data.locale);
 	setLocale(data.locale);
+
 	return data;
 };

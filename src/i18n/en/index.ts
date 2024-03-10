@@ -31,6 +31,9 @@ const en = {
 			}
 		}
 	},
+	artCard: {
+		tablistLabel: 'Choose slide to display'
+	},
 	header: {
 		name: 'LILIA GRAZIELY',
 		profession: 'Graphic Designer',
