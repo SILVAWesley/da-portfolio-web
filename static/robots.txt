@@ -5,3 +5,5 @@ Allow: /
 
 Disallow: /*.js
 Disallow: /*.json
+
+Sitemap: https://www.liliagraziely.com/sitemap.xml
