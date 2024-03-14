@@ -12,7 +12,8 @@ const config = {
 			$params: 'src/params',
 			$routes: 'src/routes',
 			$stores: 'src/stores',
-			$utils: 'src/utils'
+			$utils: 'src/utils',
+			$types: 'src/types'
 		}
 	}
 };

@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Logo, MenuAltRightIcon } from '$assets';
+	import { Logo } from '$assets';
 	import { LL } from '$i18n';
 	import { getNavigationStore } from '$stores';
 	import Drawer from './Drawer.svelte';
-
 	import LanguageMenu from './LanguageMenu.svelte';
 	import NavLink from './NavLink.svelte';
 	import ThemeMenu from './ThemeMenu.svelte';
@@ -14,21 +13,21 @@
 </script>
 
 <header
-	class="sticky top-0 z-50 flex h-20 w-full justify-center border-b-[1px] border-base-300 bg-base-100 bg-opacity-80 px-6 backdrop-blur-sm"
+	class="sticky top-0 z-50 flex h-20 min-h-20 w-full justify-center border-b-[1px] border-base-300 bg-base-100 bg-opacity-80 px-6 backdrop-blur-sm"
 >
 	<div class="flex h-full w-full max-w-screen-2xl items-center gap-4 sm:gap-10">
-		<a href="/" class="flex flex-row items-center gap-2 sm:flex-none">
-			<Logo class="h-10 w-10 fill-transparent stroke-base-content stroke-[1px]" />
+		<div class="flex flex-row items-center gap-2 sm:flex-none">
+			<Logo aria-label="Logo" class="stroke h-10 w-10 fill-transparent stroke-base-content" />
 
 			<div class="flex flex-col justify-center">
-				<h1 class="font-sans text-lg font-semibold leading-tight tracking-wider sm:text-xl">
+				<h2 class="font-sans text-lg font-semibold leading-tight tracking-wider sm:text-xl">
 					{$LL.header.name()}
-				</h1>
-				<span class="sm:text-md text-sm italic leading-none tracking-wider"
-					>{$LL.header.profession()}</span
-				>
+				</h2>
+				<h3 class="sm:text-md text-sm italic leading-none tracking-wider">
+					{$LL.header.profession()}
+				</h3>
 			</div>
-		</a>
+		</div>
 
 		<nav class="hidden flex-1 sm:flex" aria-label={$LL.header.navigation.ariaLabel()}>
 			<ul class="flex items-center gap-6">
