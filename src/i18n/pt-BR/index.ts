@@ -1,14 +1,14 @@
 import type { BaseTranslation } from '../i18n-types.js';
 
 const pt_BR = {
-	HI: 'Oi, MUITO BOM',
-	seo: {
+	general: {
+		name: 'LILIA GRAZIELY',
+		profession: 'Designer Gráfica',
 		language: 'pt-br'
 	},
-	sitemap: {
+	pages: {
 		arts: {
-			name: 'Artes',
-			title: 'Artes',
+			title: 'Minhas Artes',
 			seo: {
 				title: 'Lilia Graziely artista gráfica portfolio: artes, ilustrações, desenhos e tatuagens',
 				description:
@@ -18,8 +18,7 @@ const pt_BR = {
 			}
 		},
 		about: {
-			name: 'Sobre',
-			title: 'Sobre',
+			title: 'Sobre Mim',
 			seo: {
 				title:
 					'Sobre Lilia Graziely, artista gráfica. Especializada em artes, ilustrações, desenhos e tatuagens',
@@ -31,6 +30,8 @@ const pt_BR = {
 		}
 	},
 	artCard: {
+		label: 'arte',
+		roleDescription: 'carrossel',
 		tablistLabel: 'Escolha o slide para exibir'
 	},
 	header: {
@@ -50,6 +51,16 @@ const pt_BR = {
 			name: 'Tema',
 			themes: { system: 'Sistema', dark: 'Escuro', light: 'Claro' }
 		}
+	},
+	footer: {
+		contact: {
+			title: 'Contact me',
+			email: { ariaLabel: 'Enviar email para {0:string}' },
+			instagram: { ariaLabel: 'Abrir instagram {0:string}' },
+			linkedin: { ariaLabel: 'Abrir linkedin {0:string}' }
+		},
+		pages: { title: 'Páginas', navLabel: 'Seletor de página' },
+		language: { title: 'Idioma', navLabel: 'Seletor de idioma' }
 	}
 } satisfies BaseTranslation;
 

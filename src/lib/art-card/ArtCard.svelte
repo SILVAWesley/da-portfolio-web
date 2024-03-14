@@ -10,7 +10,6 @@
 	export let images: $$Props['images'];
 
 	let api: EmblaCarouselType | undefined = undefined;
-
 	let currentSlide: number = 0;
 
 	function onInit(event: CustomEvent<EmblaCarouselType>) {
@@ -23,31 +22,26 @@
 	}
 </script>
 
-<section
+<div
 	class="flex flex-col items-center gap-2"
-	aria-roledescription="carousel"
-	aria-label="art"
-	aria-atomic="false"
-	aria-live="polite"
+	role="group"
+	aria-roledescription={$LL.artCard.roleDescription()}
+	aria-label={$LL.artCard.label()}
 >
 	<div
 		class="overflow-hidden"
 		use:emblaCarouselSvelte={{ options: {}, plugins: [WheelGesturesPlugin()] }}
 		on:emblaInit={onInit}
-		role="region"
 	>
 		<div class="flex">
-			{#each images as { id, src, alt }, i (id)}
+			{#each images as { id, src, alt } (id)}
 				<div
 					id={`artslide-${id}`}
 					aria-labelledby={`arttab-${id}`}
 					role="tabpanel"
-					aria-roledescription="slide"
 					class="min-w-0 shrink-0 grow-0 basis-full"
 				>
-					<a tabindex={currentSlide !== i ? -1 : 0} href={`?id=${id}`}>
-						<img {alt} {src} class="aspect-square object-cover" />
-					</a>
+					<img {alt} {src} class="aspect-square object-cover" />
 				</div>
 			{/each}
 		</div>
@@ -85,4 +79,4 @@
 	{#if images.length === 1}
 		<div class="h-6" />
 	{/if}
-</section>
+</div>

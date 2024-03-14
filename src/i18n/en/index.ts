@@ -1,15 +1,14 @@
 import type { Translation } from '../i18n-types.js';
 
 const en = {
-	// this is an example Translation, just rename or delete this folder if you want
-	HI: 'Hello, Very Good',
-	seo: {
+	general: {
+		name: 'LILIA GRAZIELY',
+		profession: 'Graphic Designer',
 		language: 'en-us'
 	},
-	sitemap: {
+	pages: {
 		arts: {
-			name: 'Arts',
-			title: 'Arts',
+			title: 'My Arts',
 			seo: {
 				title: 'Lilia Graziely graphic artist portfolio: arts, drawings, illustrations and tattos',
 				description:
@@ -19,8 +18,7 @@ const en = {
 			}
 		},
 		about: {
-			name: 'About',
-			title: 'About',
+			title: 'About Me',
 			seo: {
 				title:
 					'About Lilia Graziely, graphic designer. Specialized in arts, illustrations, drawings and tattos',
@@ -32,6 +30,8 @@ const en = {
 		}
 	},
 	artCard: {
+		label: 'art',
+		roleDescription: 'carousel',
 		tablistLabel: 'Choose slide to display'
 	},
 	header: {
@@ -51,6 +51,16 @@ const en = {
 			themes: { system: 'System', dark: 'Dark', light: 'Light' },
 			name: 'Theme'
 		}
+	},
+	footer: {
+		contact: {
+			title: 'Contact me',
+			email: { ariaLabel: 'Send email to {0}' },
+			instagram: { ariaLabel: 'Open instagram {0}' },
+			linkedin: { ariaLabel: 'Open linkedin {0}' }
+		},
+		pages: { title: 'Pages', navLabel: 'Page picker' },
+		language: { title: 'Language', navLabel: 'Language picker' }
 	}
 } satisfies Translation;
 

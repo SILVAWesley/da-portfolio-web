@@ -1,4 +1,5 @@
 export { clickOutside } from './click-outside';
+export { convertSocialMediaUrlToStr } from './convert-social-media-url-to-str';
 export { CookiesStorage } from './cookies-storage';
 export { focusTrap } from './focus-trap';
 export { focusableElements } from './focusable-elements';
