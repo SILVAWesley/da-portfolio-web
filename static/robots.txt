@@ -1,0 +1,7 @@
+# https://liliagraziely.com
+User-agent: *
+
+Allow: /
+
+Disallow: /*.js
+Disallow: /*.json
