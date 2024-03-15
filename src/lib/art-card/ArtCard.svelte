@@ -20,6 +20,8 @@
 			currentSlide = e.selectedScrollSnap();
 		});
 	}
+
+	$: loaded = false;
 </script>
 
 <div
@@ -29,7 +31,7 @@
 	aria-label={$LL.artCard.label()}
 >
 	<div
-		class="overflow-hidden"
+		class="h-full w-full overflow-hidden"
 		use:emblaCarouselSvelte={{ options: {}, plugins: [WheelGesturesPlugin()] }}
 		on:emblaInit={onInit}
 	>
@@ -41,7 +43,16 @@
 					role="tabpanel"
 					class="min-w-0 shrink-0 grow-0 basis-full"
 				>
-					<img {alt} {src} class="aspect-square object-cover" />
+					<img
+						on:load={() => {
+							loaded = true;
+						}}
+						{alt}
+						{src}
+						class="animate-skel aspect-square object-cover"
+						width="100%"
+						height="100%"
+					/>
 				</div>
 			{/each}
 		</div>

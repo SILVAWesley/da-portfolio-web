@@ -28,10 +28,19 @@ export default {
 	},
 	theme: {
 		extend: {
+			animation: {
+				skel: 'wiggle 1s linear infinite'
+			},
 			fontFamily: {
 				handwritten: ['Dancing Script Variable', 'cursive'],
 				sans: ['Montserrat Variable', 'sans-serif'],
 				serif: ['Roboto Slab Variable', 'serif']
+			},
+			keyframes: {
+				wiggle: {
+					'0%': { backgroundColor: 'white' },
+					'100%': { backgroundColor: 'black' }
+				}
 			}
 		}
 	},
