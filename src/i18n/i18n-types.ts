@@ -147,7 +147,7 @@ type RootTranslation = {
 	footer: {
 		contact: {
 			/**
-			 * C​o​n​t​a​c​t​ ​m​e
+			 * C​o​n​t​a​t​o
 			 */
 			title: string
 			email: {
@@ -329,7 +329,7 @@ export type TranslationFunctions = {
 	footer: {
 		contact: {
 			/**
-			 * Contact me
+			 * Contato
 			 */
 			title: () => LocalizedString
 			email: {

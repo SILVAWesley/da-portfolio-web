@@ -11,6 +11,7 @@ const config = {
 			$i18n: 'src/i18n',
 			$params: 'src/params',
 			$routes: 'src/routes',
+			$services: 'src/services',
 			$stores: 'src/stores',
 			$utils: 'src/utils',
 			$types: 'src/types'

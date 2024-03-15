@@ -26,7 +26,7 @@
 	<Header />
 
 	<main class="flex flex-1 flex-col items-center px-0 py-4 sm:px-6 sm:py-8">
-		<div class="max-w-screen-2xl">
+		<div class="w-full max-w-screen-2xl">
 			<slot />
 		</div>
 	</main>

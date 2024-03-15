@@ -54,7 +54,7 @@ const pt_BR = {
 	},
 	footer: {
 		contact: {
-			title: 'Contact me',
+			title: 'Contato',
 			email: { ariaLabel: 'Enviar email para {0:string}' },
 			instagram: { ariaLabel: 'Abrir instagram {0:string}' },
 			linkedin: { ariaLabel: 'Abrir linkedin {0:string}' }
